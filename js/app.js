@@ -88,7 +88,7 @@ function reverseWordOrder(str){
 
 // console.log(reverseStr);
 
-console.log(reverseWordOrder("comb my on Lâncome use I"));
+// console.log(reverseWordOrder("comb my on Lâncome use I"));
 
 
 // ### 3. calculate
@@ -104,13 +104,27 @@ console.log(reverseWordOrder("comb my on Lâncome use I"));
 // If if the function is called with the third argument as “sub”, it should return return `num1` minus `num2`.
 
 // Do the same thing for multiplication “mult”, division “div”, and exponent “exp” (where `num2` is the exponent of `num1`).
+function calculate(num1, num2, operation) {
+    let optArray = ['sub','exp','add','multi','div'];
+    if (operation === 'sub'){
+        return num1-num2;
+    } else if (operation === 'exp'){
+        return num1 ** num2;
+    } else if (operation === 'add'){
+        return num1 + num2;
+    } else if (operation === 'multi'){
+        return num1 * num2;
+    } else if (operation === 'div'){
+        return num1 / num2;
+    }
+}
 
 // ```
-// console.log(calculate(4, 3, "sub"));=> 1
+console.log(calculate(4, 3, "sub"));
 // ```
 
 // ```
-// console.log(calculate(4, 3, "exp"));=> 64
+console.log(calculate(4, 3, "exp"));
 // ```
 
 // ---
