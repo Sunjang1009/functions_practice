@@ -70,21 +70,25 @@
 // > => "comb my on Lâncome use I"
 // > 
 
-// function reverseWordOrder(str){
+function reverseWordOrder(str){
+    let strArray = str.split(' ');
+    let reverseArray = strArray.reverse();
+    let reverseStr = reverseArray.join(" ");
+    return reverseStr;
+}
 
-// }
+// let str = "Ishmael me Call"
+// let strArray = str.split(' ');
 
-let str = "Ishmael me Call"
-let strArray = str.split(' ');
+// let reverseArray = strArray.reverse();
 
-let reverseArray = strArray.reverse();
+// // console.log(reverseArray);
 
-// console.log(reverseArray);
+// let reverseStr = reverseArray.join(" ")
 
-let reverseStr = reverseArray.join(" ")
+// console.log(reverseStr);
 
-console.log(reverseStr);
-
+console.log(reverseWordOrder("comb my on Lâncome use I"));
 
 
 // ### 3. calculate
