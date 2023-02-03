@@ -42,9 +42,9 @@
 // ```
 // console.log(printGreeting("Slimer"));
 // ```
-// function printGreeting(name){
-//     console.log(`Hello there, ${name} !`)
-// }
+function printGreeting(name){
+    console.log(`Hello there, ${name} !`)
+}
 
 // printGreeting('Slimer');
 // > => Hello there, Slimer!
@@ -173,6 +173,12 @@ console.log(checkPanNum(100))
 // ```
 //     const userInput = prompt("Please enter some input");
 // ```
+const userInput = prompt("Please enter your name");
+
+function printGreeting2(userInput){
+    alert(`Hello ${userInput}!`)
+}
+
 
 // > userInput is now whatever the user entered.
 // > 
