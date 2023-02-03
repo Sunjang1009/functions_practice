@@ -143,6 +143,25 @@ console.log(calculate(4, 3, "exp"));
 
 // Write a function that checks if a number is *1-to-n pandigital*.
 
+
+function checkPanNum(num){
+    let arr = num.toString().split('');
+    let result;
+    // return arr
+    // let resultToreturn = false;
+    if (num > 0){
+        for (let i=0; i<arr.length-1;i++){
+            if(arr.indexOf(arr[i]) !== arr.lastIndexOf(arr[i])){
+                result = false;
+            } else result = true;
+        }
+        
+    } else {result =  'number should be greater than 0';} 
+    return result;
+}
+
+console.log(checkPanNum(100))
+// want to learn how to do with for loops.
 // ---
 
 // ### 5. `printGreeting` v2.0
